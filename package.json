@@ -1,0 +1,29 @@
+{
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "A simple movie search app.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipulchodankar/movie-search-app.git"
+  },
+  "keywords": [],
+  "author": "Vipul Chodankar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vipulchodankar/movie-search-app/issues"
+  },
+  "homepage": "https://github.com/vipulchodankar/movie-search-app#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
