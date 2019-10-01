@@ -5,7 +5,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the movie search app!");
+  res.render("search");
 });
 
 app.get("/results", (req, res) => {
