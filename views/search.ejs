@@ -1,9 +1,20 @@
 <% include ./partials/header %>
 <% include ./partials/navbar %>
 
-<div class="container">
-  <h2>Search!</h2>
+<div class="container bg-light my-5 py-5">
+  <h3 class="my-2">Search</h3>
+
+  <hr>
+
+  <form action="/results" method="GET">
+    <input type="text" name="search" id="" placeholder="Enter Movie Name">
+    <input type="submit" value="Submit" >
+  </form>
 </div>
 
+<div class="container my-5 py-5 bg-light">
+  <p><b> How to use: </b>Enter movie name and click Submit to get results.</p>
+  <a href="https://github.com/vipulchodankar/movie-search-app">GitHub Repo</a>
+</div>
 
 <% include ./partials/footer %>
