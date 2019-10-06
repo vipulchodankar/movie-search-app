@@ -23,8 +23,8 @@ app.get("/results", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 6969;
+const port = process.env.PORT || 6969;
 
-app.listen(PORT, () => {
-  console.log(`Movie Search App running at http://localhost:${PORT}/`);
+app.listen(port, () => {
+  console.log(`Movie Search App running at http://localhost:${port}/`);
 });
