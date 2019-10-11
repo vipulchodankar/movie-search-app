@@ -1,6 +1,7 @@
 const express = require("express");
 const request = require("request");
 const app = express();
+require('dotenv').config()
 
 app.set("view engine", "ejs");
 
@@ -12,7 +13,7 @@ app.get("/", (req, res) => {
 
 app.get("/results", (req, res) => {
   var query = req.query.search;
-  var url = "http://www.omdbapi.com/?s=" + query + "&apikey=8623c884";
+  var url = "http://www.omdbapi.com/?s=" + query + "&apikey="+process.env.api_key;
   request(url, (err, response, body) => {
     if (!err && response.statusCode === 200) {
       const data = JSON.parse(body);
