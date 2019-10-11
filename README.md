@@ -4,7 +4,7 @@ The app is still under development.
 
 
 # Dependencies: 
-The app uses nodejs and npm, hence both should be installed. Go to npmjs,org for more details 
+The app uses nodejs and npm, hence both should be installed. Go to [npmjs,org](npmjs.org) for more details 
 To install other app dependencies simply run 
 ```
 npm install
